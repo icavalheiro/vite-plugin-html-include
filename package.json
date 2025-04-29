@@ -1,7 +1,7 @@
 {
     "name": "vite-plugin-html-include",
     "version": "1.0.0",
-    "private": true,
+    "private": false,
     "description": "A simple plugin to allow you to include html partials in yout html files",
     "keywords": [
         "vite",
@@ -22,14 +22,15 @@
     "license": "MIT",
     "author": "Ivan S. Cavalheiro",
     "type": "module",
-    "main": "index.ts",
+    "main": "build/index.js",
     "directories": {
         "test": "tests"
     },
     "scripts": {
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-        "lint-staged": "lint-staged"
+        "lint-staged": "lint-staged",
+        "build": "tsc"
     },
     "dependencies": {
         "node-html-parser": "^7.0.1",
