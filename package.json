@@ -1,15 +1,35 @@
 {
     "name": "vite-plugin-html-include",
-    "module": "index.ts",
-    "type": "module",
+    "version": "1.0.0",
     "private": true,
+    "description": "A simple plugin to allow you to include html partials in yout html files",
+    "keywords": [
+        "vite",
+        "plugin",
+        "html",
+        "include",
+        "partials",
+        "static"
+    ],
+    "homepage": "https://github.com/icavalheiro/vite-plugin-html-include#readme",
+    "bugs": {
+        "url": "https://github.com/icavalheiro/vite-plugin-html-include/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/icavalheiro/vite-plugin-html-include.git"
+    },
+    "license": "MIT",
+    "author": "Ivan S. Cavalheiro",
+    "type": "module",
+    "main": "index.ts",
+    "directories": {
+        "test": "tests"
+    },
     "scripts": {
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
         "lint-staged": "lint-staged"
-    },
-    "peerDependencies": {
-        "typescript": "^5"
     },
     "dependencies": {
         "node-html-parser": "^7.0.1",
@@ -25,6 +45,10 @@
         "typescript-eslint": "^8.29.1",
         "vite": "^6.1.0"
     },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "module": "index.ts",
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
             "bun run lint:fix"
